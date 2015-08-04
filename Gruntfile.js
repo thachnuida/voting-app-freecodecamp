@@ -647,7 +647,10 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'injector:less',
-    'concurrent:dist',
+    // 'concurrent:dist',
+    'less',
+    // 'imagemin',
+    'svgmin',
     'injector',
     'wiredep',
     'useminPrepare',
